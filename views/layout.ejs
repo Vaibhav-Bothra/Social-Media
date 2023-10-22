@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>dirProject</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/css/layout.css" />
+    <%- style %>
+  </head>
+
+  <body>
+    <%- include('_header'); %> <%- body %> <%- include('_footer'); %> <%- script
+    %>
+    <script>
+      // let suc = '<%=flash.success%>';
+      // let err = '<%=flash.error%>';
+      // if(suc && suc.length > 0){
+      //     new Noty({
+      //         theme: 'relax',
+      //         text: suc,
+      //         timeout: 1500,
+      //         type: 'success',
+      //         layout: 'topRight'
+      //     }).show();
+      // }
+      // if(err && err.length > 0){
+      //     new Noty({
+      //         theme: 'relax',
+      //         text: err,
+      //         timeout: 1500,
+      //         type: 'error',
+      //         layout: 'topRight'
+      //     }).show();
+      // }
+    </script>
+  </body>
+</html>
