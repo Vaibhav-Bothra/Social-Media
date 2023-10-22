@@ -17,26 +17,26 @@
     <%- include('_header'); %> <%- body %> <%- include('_footer'); %> <%- script
     %>
     <script>
-      // let suc = '<%=flash.success%>';
-      // let err = '<%=flash.error%>';
-      // if(suc && suc.length > 0){
-      //     new Noty({
-      //         theme: 'relax',
-      //         text: suc,
-      //         timeout: 1500,
-      //         type: 'success',
-      //         layout: 'topRight'
-      //     }).show();
-      // }
-      // if(err && err.length > 0){
-      //     new Noty({
-      //         theme: 'relax',
-      //         text: err,
-      //         timeout: 1500,
-      //         type: 'error',
-      //         layout: 'topRight'
-      //     }).show();
-      // }
+      let suc = "<%=flash.success%>";
+      let err = "<%=flash.error%>";
+      if (suc && suc.length > 0) {
+        new Noty({
+          theme: "relax",
+          text: suc,
+          timeout: 1500,
+          type: "success",
+          layout: "topRight",
+        }).show();
+      }
+      if (err && err.length > 0) {
+        new Noty({
+          theme: "relax",
+          text: err,
+          timeout: 1500,
+          type: "error",
+          layout: "topRight",
+        }).show();
+      }
     </script>
   </body>
 </html>
