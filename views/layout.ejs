@@ -14,8 +14,13 @@
   </head>
 
   <body>
-    <%- include('_header'); %> <%- body %> <%- include('_footer'); %> <%- script
-    %>
+    <%- include('_header'); %>
+    <!-- hh -->
+    <%- body %>
+    <!-- hh -->
+    <%- include('_footer'); %>
+    <!-- hh -->
+    <%- script %>
     <script>
       let suc = "<%=flash.success%>";
       let err = "<%=flash.error%>";

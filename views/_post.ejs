@@ -1,9 +1,9 @@
 <li id="post-<%=post._id%>">
-  <p>
+  <h3>
     <%= post.content %>
     <br />
     <small> <%= post.user.name %> </small>
-  </p>
+  </h3>
   <% if(locals.user && post.user.id == locals.user.id) { %>
   <a id="delete-post-button" href="/posts/delete/<%= post.id %>">Delete</a>
   <% } %>

@@ -1,28 +1,52 @@
 <header>
-    Page Header
+  <h1 style="font-family: sans-serif; text-align: center">Social Media</h1>
+  <ul style="display: flex; width: 80%; margin: auto">
+    <% if (locals.user){ %>
+    <li
+      style="
+        width: 50%;
+        text-align: center;
+        list-style-type: none;
+        font-size: larger;
+      "
+    >
+      <a href="/users/profile/<%= user._id %>"> <%= user.name %> </a>
+    </li>
+    <li
+      style="
+        width: 50%;
+        text-align: center;
+        list-style-type: none;
+        font-size: larger;
+      "
+    >
+      <a href="/users/signout">Sign Out</a>
+    </li>
+    <% }else{ %>
 
-    <ul>
-        <% if (locals.user){ %>
-            <li>
-                <a href="/users/profile/<%= user._id %>">
-                    <%= user.name %>
-                </a>
-            </li>
-            <li>
-                <a href="/users/signout">Sign Out</a>
-            </li>
-        <% }else{ %>
+    <li
+      style="
+        width: 50%;
+        text-align: center;
+        list-style-type: none;
+        font-size: larger;
+      "
+    >
+      <a href="/users/signin">Sign In</a>
+    </li>
 
-            <li>
-                <a href="/users/signin">Sign In</a>
-            </li>
+    <li
+      style="
+        width: 50%;
+        text-align: center;
+        list-style-type: none;
+        font-size: larger;
+      "
+    >
+      <a href="/users/signup">Sign Up</a>
+    </li>
 
-            <li>
-                <a href="/users/signup">Sign Up</a>
-            </li>
-
-
-        <% } %>
-    </ul>
-
+    <% } %>
+  </ul>
+  <br />
 </header>
