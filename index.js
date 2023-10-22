@@ -65,13 +65,13 @@ app.use(
   })
 );
 
-// app.use(passport.initialize());
-// app.use(passport.session());
+app.use(passport.initialize());
+app.use(passport.session());
 
-// app.use(passport.setAuthenticatedUser);
+app.use(passport.setAuthenticatedUser);
 
-// app.use(flash());
-// app.use(customWare.setFlash);
+app.use(flash());
+app.use(customWare.setFlash);
 
 app.use("/", require("./routes/index"));
 
